@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/lab2.dir/shell.cxx.o CMakeFiles/lab2.dir/command.cxx.o  -o lab2 

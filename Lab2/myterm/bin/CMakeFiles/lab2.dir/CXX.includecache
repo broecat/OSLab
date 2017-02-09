@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/broecat/Documents/OSLab/Lab2/myterm/src/command.cxx
+command.h
+/home/broecat/Documents/OSLab/Lab2/myterm/src/command.h
+iostream
+-
+boost/xpressive/xpressive.hpp
+-
+vector
+-
+sstream
+-
+
+/home/broecat/Documents/OSLab/Lab2/myterm/src/command.h
+string
+-
+vector
+-
+
+/home/broecat/Documents/OSLab/Lab2/myterm/src/shell.cxx
+iostream
+-
+command.h
+/home/broecat/Documents/OSLab/Lab2/myterm/src/command.h
+
