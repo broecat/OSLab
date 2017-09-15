@@ -39,6 +39,7 @@ void * signalHandle(int sig)
 
 int main()
 {
+   printf("PID: %d",getpid());
    signal( SIGINT, (void (*) (int))  signalHandle );
    signal( SIGQUIT, (void (*) (int))  signalHandle );
    signal( SIGTERM, (void (*) (int))  signalHandle );
