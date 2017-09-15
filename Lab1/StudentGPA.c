@@ -12,7 +12,7 @@ int compare (const void *a, const void *b)
 {
     struct Student *A = (struct Student *)a;
     struct Student *B = (struct Student *)b;
-   return (int)(100.0*A->GPA - 100.0*B->GPA);
+   return (int)(100.0*B->GPA - 100.0*A->GPA);
 }
 
 int main(void) {
@@ -37,7 +37,7 @@ int main(void) {
 
     for(int i=1;i<=amount;i++)
     {
-        printf("%d. Name: %s    GPA: %f\n",i,students[i-1].name,students[i-1].GPA);
+        printf("Posicion en memoria: %d Name: %s    GPA: %.2f\n",&students[i],students[i-1].name,students[i-1].GPA);
     }
 
 	return 0;

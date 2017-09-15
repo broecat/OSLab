@@ -1,0 +1,35 @@
+Preguntas:
+
+1. 4 Program errors and their usage:
+    SIGFPE: Floating Point Exception
+        This error reports arithmetic errors from division by zero to integer overflows.
+        Probably the most important error signal there is.
+    
+    SIGSEGV: Segmentation Violation
+        SIGSEGV is generated when a program tries to use more memory than allocated.
+        For example, array[5] = 'a' when an array has length of 5.
+
+     SIGABRT: Abort
+        When a program aborts for whatever reason, this signal is called.
+
+    SIGSYS: Bad System call
+        Happens when a system call is executed but the system call does not exist.
+
+2. 4 Termination Signals and usage:
+    SIGINT: Interrupts
+        Disrupt the execution of the program. Usually quits the program but can be handled.
+
+    SIGQUIT: Quit
+        SIGQUIT is similar to SIGINT but it creates a dump of the machine state.
+        Using this would help immensively with debugging.
+    
+    SIGTERM: Terminates
+        A signal to terminate a process. Unlike SIGKILL, this signal can be handled or blocked.
+    
+    SIGKILL: Kill
+        Mercilessly stop a process from running. No exceptions.
+        Used when a program won't respond to other termination signals, usually.
+
+3. What signal is impossible to handle or ignore? Why?
+    SIGKILL. It's necessary to have a signal that terminates a program that can't be blocked.
+    Otherwise, the only way to stop execution for a bug or malicious program would be to turn the computer off.
