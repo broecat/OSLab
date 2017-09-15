@@ -27,7 +27,7 @@ void * sigfpeHandle(int myint)
    printf("\nNow, the program will make the SIGFPE occur programmatically.");
    
    int a = 10/0;
-   
+
    exit(0);
 }
 void * sigsegvHandle(int myint)
@@ -57,7 +57,8 @@ int main()
    signal( SIGSEGV, (void *)  sigsegvHandle );
    signal( SIGILL, (void *)  sigillHandle );
    signal( SIGBUS, SIG_IGN);
-   raise(SIGILL);
+   //Uncomment to raise SIGILL
+   //raise(SIGILL);
    while(1) {
 	printf("Doing Nothing...\n");
 	sleep(1);
